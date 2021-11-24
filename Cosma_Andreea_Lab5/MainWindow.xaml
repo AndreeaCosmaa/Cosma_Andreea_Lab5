@@ -71,9 +71,7 @@
             <StackPanel x:Name="spActions" Margin="0,-10,-2,-4" >
                 <Button x:Name="btnSave" Content="Save" Height="21" VerticalAlignment="Top" Click="btnSave_Click" Margin="0,0,16,0" >
                     <Button.Style>
-                        <!--{StaticResource BigGreenButton}-->
-                        <!--Style="{StaticResource ColorBox}"-->
-                        <Style TargetType="{x:Type Button}">
+                        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BigButton}">
                             <Setter Property="IsEnabled" Value="False"/>
                             <Style.Triggers>
                                 <!--Butonul Save va fi inactiv daca exista erori de validare -->
